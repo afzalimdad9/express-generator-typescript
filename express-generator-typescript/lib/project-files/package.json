@@ -23,6 +23,7 @@
     "@types/jasmine": "^5.1.8",
     "@types/morgan": "^1.9.10",
     "@types/node": "^24.0.3",
+    "@types/supertest": "^6.0.3",
     "find": "^0.3.0",
     "jasmine": "^5.8.0",
     "morgan": "^1.10.0",
