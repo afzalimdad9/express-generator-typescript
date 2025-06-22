@@ -1,0 +1,54 @@
+{
+  "name": "@afzalimdad9/express-generator-typescript",
+  "version": "2.7.3",
+  "description": "Generate new Express applications similar to express-generate which but sets it up to use TypeScript instead",
+  "scripts": {
+    "express-generator-typescript": "node bin/cli.js",
+    "pre-publish": "mv README.md README-git && mv README-npm README.md",
+    "post-publish": "mv README.md README-npm && mv README-git README.md",
+    "start": "node bin/cli.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "lib/cli.js",
+  "bin": {
+    "express-generator-typescript": "bin/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afzalimdad9/express-generator-typescript.git"
+  },
+  "keywords": [
+    "express",
+    "ex",
+    "generator",
+    "generate",
+    "gen",
+    "typescript",
+    "ts",
+    "types",
+    "typing",
+    "overnight",
+    "overnightjs",
+    "js",
+    "new",
+    "app",
+    "express-ts",
+    "decorators",
+    "decorate",
+    "test",
+    "testing",
+    "routes",
+    "router",
+    "routing"
+  ],
+  "author": "afzalimdad9",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/afzalimdad9/express-generator-typescript/issues"
+  },
+  "homepage": "https://github.com/afzalimdad9/express-generator-typescript#readme",
+  "dependencies": {
+    "edit-json-file": "^1.8.1",
+    "ncp": "^2.0.0"
+  }
+}

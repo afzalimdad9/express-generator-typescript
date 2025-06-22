@@ -1,11 +1,9 @@
-# Created by .ignore support plugin (hsz.mobi)
+**/**/node_modules
+**/**/*.log
+lib/**/package-lock.json
+lib/project-files/.vscode
+lib/project-files/config.js
+**/**/dist
 
-
-# IntelliJ project files
-*.iml
-.idea/
-
-
-# Misc
-**/node_modules
-**/package-lock.json
+test/
+**/**/.DS_Store
