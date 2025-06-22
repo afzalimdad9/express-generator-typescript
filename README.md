@@ -1,4 +1,4 @@
-<img alt='overnightjs' src='https://github.com/afzalimdad9/express-generator-typescript/raw/master/express-typescript.png' border='0'>
+<img alt='overnightjs' src='https://raw.githubusercontent.com/afzalimdad9/express-generator-typescript/refs/heads/main/express-typescript.png' border='0'>
 
 [Express](https://www.npmjs.com/package/express) with [TypeScript's](https://www.npmjs.com/package/typescript) application generator.
 
