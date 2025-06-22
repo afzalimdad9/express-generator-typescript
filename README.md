@@ -50,8 +50,8 @@ If you don't specify a project name, the default _express-gen-project_ will be u
 Create the app:
 
 ```bash
-npx express-generator-typescript "optionally pass named of project you want to create"
-cd "name of the project"
+npx express-generator-typescript "project name"
+cd "project name"
 ```
 
 Install dependencies:
