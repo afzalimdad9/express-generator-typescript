@@ -4,8 +4,8 @@
  * created by afzalimdad9, 6/22/2025
  */
 
-const async = require("async");
 const path = require("path");
+const editJsonFile = require("edit-json-file");
 const childProcess = require("child_process");
 const ncp = require("ncp").ncp;
 
@@ -18,10 +18,18 @@ async function start() {
     const source = path.join(__dirname, "./project-files");
     const destination = path.join(process.cwd(), process.argv[2] || "");
     await copyProjectFiles(source, destination);
+    updatePackageJson(destination);
     downloadNodeModules(destination);
   } catch (err) {
     console.error(err);
   }
+}
+
+function updatePackageJson(destination) {
+  let file = editJsonFile(destination + "/package.json", {
+    autosave: true,
+  });
+  file.set("name", path.basename(destination));
 }
 
 function copyProjectFiles(source, destination) {
@@ -44,7 +52,7 @@ function downloadNodeModules(destination) {
   const devDependencies =
     "ts-node tslint typescript nodemon find jasmine supertest " +
     "@types/node @types/dotenv @types/express @types/jasmine @types/find @types/morgan " +
-    "@types/cookie-parser @types/supertest";
+    "@types/cookie-parser @types/supertest fs-extra";
 
   const options = { cwd: destination };
 

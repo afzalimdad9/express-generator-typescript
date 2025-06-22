@@ -2,7 +2,7 @@
   "name": "",
   "version": "0.0.0",
   "scripts": {
-    "build": "rm -rf ./dist/ && tsc --sourceMap false",
+    "build": "node ./util/build.js",
     "start": "node dist/start.js production",
     "start-dev": "nodemon --config \"./util/nodemon.json\"",
     "test": "nodemon --config \"./util/nodemon.test.json\""
@@ -25,6 +25,7 @@
     "@types/node": "^24.0.3",
     "@types/supertest": "^6.0.3",
     "find": "^0.3.0",
+    "fs-extra": "^11.3.0",
     "jasmine": "^5.8.0",
     "morgan": "^1.10.0",
     "nodemon": "^3.1.10",
